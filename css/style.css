@@ -1,0 +1,269 @@
+@charset "UTF-8";/*文字コードの指定*/
+
+html {
+    font-family: sans-serif;/*ページ全体のフォントの種類を指定*/
+}
+
+html * {
+    box-sizing: border-box;/*widthプロパティ、heightプロパティで指定する値を、ボーダー領域まで含む幅と高さに変更する*/
+}
+
+body {
+    margin: 15px 0 0 0;/*上右下左*/
+    background-color: #ffffff;/*backgroundの色を変えた*/
+}
+
+.wrapper {
+    margin: 0 auto 0 auto;/*上右下左*/
+    max-width: 960px;/*max-widthプロパティは、 <IMG>・ <INPUT>・ <TEXTAREA>・ <SELECT> などの領域の幅の最大値を指定する際に使用。 最大値を指定することで、これらの要素の幅を一定範囲内に収めることができる。*/
+}
+
+h2 {
+    color: #b5cdf5;/*フォントの色*/
+    font-size: 22px;/*フォントのサイズ*/
+    border-bottom: 3px dotted #3f5170;/*下線の太さ・下線の形状・下線の色*/
+    margin-top: 20px;/*上*/
+    margin-right: 0px;/*右*/
+    margin-bottom: 20px;/*下*/
+    margin-left: 0px;/*左*/
+    padding-top: 5px;/*上*/
+    padding-right: 5px;/*右*/
+    padding-bottom: 5px;/*下*/
+    padding-left: 5px;/*左*/
+}
+
+p {
+    line-height: 1.6;/*<p>～</p>に含まれるテキストの内容が複数行にまたがるときの行間を調整します。line-height自体は、line-heightで指定した値からfont-sizeを引いた残りの、値を行間として上下均等に割り振る*/
+}
+
+a:link {/*href属性が設定されている(通常の<a>タグ）*/
+    color: #4169a1;
+}
+
+a:visited {/*リンク先が訪問済み*/
+    color: #1e4172;
+}
+
+a:hover {/*マウスポインタがリンクに乗っている*/
+    color: #b0c4de;
+}
+
+a:active {/*マウスポインタが押されている*/
+    color: #f0f8ff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    margin: 50px 0 40px 0;/*ロゴ画像の調整*/
+    line-height: 0;/*行の高さを0に*/
+    text-align: center;/*テキストや画像など、コンテンツの行揃えを設定する・centerにした*/
+}
+.logo2 {
+    margin: 50px 0 40px 0;
+    line-height: 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;/*要素がひらっべたく横に並んでいく*/
+    list-style-type: none;/*リスト項目の先頭に付ける「・」を表示させなくした*/
+    padding: 0 60px 0 65px;
+}
+
+.nav ul {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+li+ li {
+    border-left: 1px solid #0a0a0a;/*ナヴィゲーションメニューの間に縦線を入れた*/
+}
+
+.nav a:link {
+    color: #0f0f0f;
+    text-decoration: none;/*テキストの装飾(下線、上線、取り消し線、点線)を行いません*/
+}
+
+.nav a:visited {
+    color: #b6a9a9;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #07f7ff;
+    text-decoration: none;
+}
+
+.nav a:active {
+    color: #0772ff;
+    text-decoration: none;
+}
+
+.footer {
+    background-image: url(../images/footer.png);
+    background-repeat: no-repeat;/*背景画像を繰り返さない・設定しないと繰り返し同じ画像が表示される*/
+    padding: 80px 15px 20px 0px;
+    font-size: 15px;
+    color: #3f5170;
+}
+
+.keyvisual {
+    margin: 15px 0 0 0;
+}
+
+.bible {
+    text-align: right;
+}
+
+.clear {
+    clear: both;/*左寄せ・右寄せされた全てに要素に対する回り込みを解除*/
+}
+
+.info {
+    border-collapse: collapse;/*隣接するセルのボーダーを重ねて表示するか、間隔をあけて表示するかを指定する。この場合、隣接するセルのボーダーを重ねた*/
+    padding: 0 60px 0 60px;
+}
+
+.info th, .info td {
+    padding: 8px;
+    border: 1px solid #bec2c7;
+    text-align: left;
+    vertical-align: top;/*テーブルセルの上下の行揃えを変更*/
+}
+
+.info th {
+    background-color: #dde2ea; 
+    width: 180px;
+    color: #3f5170;
+}
+
+.menu-item {
+    display: flex;/*子要素が自動的に横に並ぶ・詳しくは、201ページ*/
+    padding: 20px 0 20px 0;
+}
+
+.menu-photo {
+    margin-right: 20px;
+    flex: 1 1 auto;/*横に並んだボックスのうち、幅を伸縮させたいものには「flex: 1 1 auto;」と書く*/
+}
+
+.menu-text {
+    flex: 0 0 336px;/*横に並んだボックスのうち、幅を固定させたいものには「flex: 0 0 固定幅;」と書く。「固定幅」は「幅+px」で指定する」*/
+}
+
+.map {
+    text-align: center;
+}
+.gmap-wrap {
+    margin: 15px 0 0 0;
+}
+/* 備忘録
+form div {
+    padding: 12px;
+    border-bottom: 1px dashed #bec2c7;
+}
+
+select {
+    width: 30em;
+}
+
+input[name="subject"]{
+    width: 30em;
+}
+
+textarea {
+    width: 30em;
+    height: 6em;
+}
+
+input[type="submit"]{
+    margin: 20px 0;
+    width: 30em;
+}
+*/
+@media(max-width: 767px){
+    .wrapper {
+        margin: 0px 8px;
+    }
+
+    .logo {
+        margin: 30px 0;
+    }
+    .logo2 {
+        margin: 30px 0;
+    }
+    .logo img {
+        width: 200px;
+    }
+    .logo2 img {
+        width: 200px;
+    }
+    .nav ul {/*順序がないリスト・olは順序がある番号付きのリスト*/
+        text-align: center;
+    }
+    
+    .nav li {
+        padding: 0 2px 0 2px;
+    }
+    
+    li+ li {
+        border-left: none;    /*ナヴィゲーションメニューの間の縦線を消した*/
+    }
+    .menu-item {
+        display: block;
+    }
+
+    .menu-photo {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .menu-text{
+        width: 100%;
+    }
+/*google map レスポンシブレイアウト*/
+.gmap-wrap{
+    position : relative;
+    line-height: 10px;
+    height : 0;
+    margin: 15px 0 0 0;
+    padding-bottom : 56.25%; /* 縦横比の指定 */
+    overflow : hidden;
+}
+
+.gmap-wrap iframe,
+.gmap-wrap object,
+.gmap-wrap embed{
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+}
+/*google mapレスポンシブレイアウト終わり*/
+    /*備忘録
+    select {
+        width: 100%;
+    }
+
+    input[name="subject"]{
+        width: 100%;
+    }
+
+    text area {
+        width: 100%;
+    }
+
+    input[type="submit"]{
+        margin: 20px 0;
+        width: 100%;
+    }
+    */
+}
+
+
+
